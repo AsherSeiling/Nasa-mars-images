@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Mars Images</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="disp.js"></script>
+</head>
+<style>
+    *{
+        margin-left: 25pt;
+        margin-right: 25pt;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    img{
+        margin: 5pt;
+    }
+    iframe{
+        padding: 10pt;
+    }
+    .image_space{
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+    }
+
+</style>
+<body>
+    <center>
+        <h1>Nasa Mars Images</h1>
+    </center>
+    <div id="image_space" class="image_space">
+        <iframe src='https://mars.nasa.gov/embed/25612/'  height="240pt" scrolling='no' frameborder='0'></iframe>
+    </div>
+</body>
+</html>
